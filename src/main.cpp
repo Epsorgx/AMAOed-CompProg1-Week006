@@ -1,7 +1,7 @@
 /* ****************************************************************
  * @author: <Mark Gerone F. Grospe>
- * @app name: <Tell If>
- * @app desc: <A program that will accept and integer and execute command based on the input using IF statements>
+ * @app name: <Tell Switch case>
+ * @app desc: <A program that will accept and integer and execute command based on the input using Switch case statements>
  * @history:
  *  - <yyyy/mm/dd> | <name>
  *      -- <description>
@@ -34,22 +34,28 @@ int main() {
     // ***********************************************************
     int user_input;
 
-    cout << "Hi, there! \nPlease enter a number from 0 to 4 and i will say something: ";
+    cout << "Hi, there! \nPlease choose a number from 0 to 4 and i will say something: ";
     cin >> user_input;
 
-    if (user_input == 0) {
-        cout << "\nHello world\n\n";
-    } else if (user_input == 1) {
-        cout << "\nI am Groot\n\n";
-    } else if (user_input == 2) {
-        cout << "\nTo the top\n\n";
-    } else if (user_input == 3) {
-        cout << "\nWhere is the horizon\n\n";
-    } else if (user_input == 4) {
-        cout << "\nI do not know\n\n";
-    }
-    else {
-        cout << "\nYeah, I will \n\n";
+    switch (user_input) {
+        case 0 :
+            cout << "\nHello world\n\n";
+            break;
+        case 1 :
+            cout << "\nI am Groot\n\n";
+            break;
+        case 2 :
+            cout << "\nTo the top\n\n";
+            break;
+        case 3 :
+            cout << "\nWhere is the horizon\n\n";
+            break;
+        case 4 :
+            cout << "\nI do not know\n\n";
+            break;
+        default :
+            cout << "\nYeah, I will \n\n";
+            break;
     }
 
     cin.ignore();
